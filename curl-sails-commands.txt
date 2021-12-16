@@ -1,0 +1,11 @@
+User register
+curl -d "fullname=WhoopWhoop Oliver&email=boliver@whojr.com&password=123456789"  -X POST http://192.168.1.3:1337/user/register/
+
+User Login:
+curl -d "email=boliver@whojr.com&password=123456789" -X POST http://192.168.1.3:1337/user/login
+
+Forgot Password:
+curl -d "email=boliver@whojr.com" -X POST http://192.168.1.3:1337/user/forgot-password
+
+Put in browser from email:
+http://localhost:1337/user/reset-password?token=0NJNPOqSuM00bx4BSJ0BQ&password=%22HelloThereFolks%22
